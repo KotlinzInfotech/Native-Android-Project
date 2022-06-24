@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <CheckBox
+        android:id="@+id/cb_music"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:button="@null"
+        android:drawableRight="?android:listChoiceIndicatorMultiple"
+        android:paddingLeft="6.0dip"
+        android:paddingRight="8.0dip"
+        android:textColor="#ffffffff" />
+
+    <LinearLayout
+        android:id="@+id/ll_download"
+        android:layout_width="fill_parent"
+        android:layout_height="48.0dip"
+        android:orientation="horizontal"
+        android:paddingLeft="6.0dip"
+        android:paddingRight="2.0dip"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_download_name"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical"
+            android:text="Download file name"
+            android:textColor="#ffffffff" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_dowload"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:src="@drawable/ic_file_download" />
+
+            <com.cybertechinfosoft.photoslideshowwithmusic.view.DonutProgress
+                android:id="@+id/donut_progress"
+                android:layout_width="48.0dip"
+                android:layout_height="48.0dip"
+                android:visibility="gone"
+                custom:donut_circle_starting_degree="-90"
+                custom:donut_finished_color="@color/app_theme_color"
+                custom:donut_finished_stroke_width="2.0dip"
+                custom:donut_show_text="true"
+                custom:donut_text_color="@color/app_theme_color"
+                custom:donut_text_size="10.0sp"
+                custom:donut_unfinished_color="#ff000000"
+                custom:donut_unfinished_stroke_width="2.0dip" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="cardview_compat_inset_shadow">1dp</dimen>
+    <dimen name="cardview_default_elevation">2dp</dimen>
+    <dimen name="cardview_default_radius">2dp</dimen>
+    <dimen name="item_touch_helper_max_drag_scroll_per_frame">20dp</dimen>
+    <dimen name="item_touch_helper_swipe_escape_max_velocity">800dp</dimen>
+    <dimen name="item_touch_helper_swipe_escape_velocity">120dp</dimen>
+    <dimen name="text_10">10dp</dimen>
+    <dimen name="value_10">10dp</dimen>
+    <dimen name="value_2">2dp</dimen>
+    <dimen name="value_3">3dp</dimen>
+    <dimen name="value_5">5dp</dimen>
+    <dimen name="value_8">8dp</dimen>
+
+</resources>

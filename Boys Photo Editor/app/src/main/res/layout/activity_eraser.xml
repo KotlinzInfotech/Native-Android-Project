@@ -1,0 +1,242 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_toolbar"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/bg_previous_selector" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="6dp"
+               android:layout_toEndOf="@id/iv_back"
+                android:gravity="center"
+                android:text="@string/eraser"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+
+            <ImageView
+                android:id="@+id/redoButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/icon_redo"
+                android:layout_centerVertical="true"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/undoButton"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginRight="10dp"
+                android:layout_toLeftOf="@+id/redoButton"
+                android:background="@drawable/icon_undo"
+                android:layout_centerVertical="true"
+                android:gravity="center" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center"
+                android:paddingBottom="50dp"/>
+
+            <RelativeLayout
+                android:id="@+id/subBottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_above="@+id/bottomBar"
+                android:background="@color/white"
+                android:gravity="center_vertical">
+
+                <RelativeLayout
+                    android:id="@+id/magicWand_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/magic_remove_button"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/magic_remove_button"
+                        android:scaleType="center" />
+
+                    <ImageView
+                        android:id="@+id/magic_restore_button"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/magic_remove_button"
+                        android:background="@drawable/magic_restore_button"
+                        android:scaleType="center" />
+
+                    <SeekBar
+                        android:id="@+id/magic_seekbar"
+                        android:layout_width="230dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:max="30"
+                        android:paddingRight="20dp"
+                        android:paddingBottom="10dp"
+                        android:progressDrawable="@drawable/progress"
+                        android:thumb="@drawable/thumb" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/eraser_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="@color/white"
+                    android:gravity="center_vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/erase_sub_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/eraser_sub_button"
+                        android:scaleType="center" />
+
+                    <ImageView
+                        android:id="@+id/unerase_sub_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/erase_sub_button"
+                        android:src="@drawable/uneraser_sub_button"
+                        android:scaleType="center" />
+
+                    <ImageView
+                        android:id="@+id/brush_size_1_button"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="7dp"
+                        android:scaleType="center"
+                        android:layout_toLeftOf="@+id/brush_size_2_button"
+                        android:src="@drawable/brush_size1_button" />
+
+                    <ImageView
+                        android:id="@+id/brush_size_2_button"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_toLeftOf="@+id/brush_size_3_button"
+                        android:scaleType="center"
+                        android:src="@drawable/brush_size2_button" />
+
+                    <ImageView
+                        android:id="@+id/brush_size_3_button"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_toLeftOf="@+id/brush_size_4_button"
+                        android:scaleType="center"
+                        android:src="@drawable/brush_size3_button" />
+
+                    <ImageView
+                        android:id="@+id/brush_size_4_button"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:scaleType="center"
+                        android:src="@drawable/brush_size4_button" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/bottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/white"
+                android:paddingTop="3dp">
+
+                <ImageView
+                    android:id="@+id/iv_magic"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_magic_unpress" />
+
+                <ImageView
+                    android:id="@+id/eraseButton"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_weight="1"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_eraser_unpress" />
+
+                <ImageView
+                    android:id="@+id/iv_position"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_position_unpress" />
+
+                <ImageView
+                    android:id="@+id/iv_save"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="2dp"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_erasersave_unpress" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center"
+                android:background="#00000000"
+                android:gravity="center">
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

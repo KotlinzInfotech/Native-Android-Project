@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="QRScantype">
+        <item>@string/scanrts</item>
+        <item>@string/scanreturn</item>
+        <item>@string/getdetail</item>
+    </string-array>
+    <string-array name="BarcodeScantype">
+        <item>Complete</item>
+        <item>Partial</item>
+        <item>Wrong</item>
+        <item>Damaged</item>
+    </string-array>
+    <string-array name="BarcodeScantypenone">
+        <item>None</item>
+           </string-array>
+</resources>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardview="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_cardall"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="4dp"
+    cardview:cardBackgroundColor="#ffffffff"
+    cardview:cardCornerRadius="10dp"
+    cardview:cardElevation="5dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="Ad"
+        android:textSize="10sp"
+        android:padding="2dp"
+        android:background="#ede62a"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llMain"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@android:color/transparent"
+            android:orientation="vertical"
+            android:weightSum="1.0">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="4dp"
+                android:layout_weight="0.2"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rel_cardList"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent">
+
+                    <ImageView
+                        android:id="@+id/ivImageDown"
+                        android:layout_width="65dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/play_downl" />
+
+                    <ImageView
+                        android:id="@+id/ivAppIcon"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_below="@+id/ivImageDown"
+                        android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="0dp"
+                android:layout_weight="0.8"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:weightSum="1.0">
+
+                <TextView
+                    android:id="@+id/tvAppName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="appname"
+                    android:textColor="@android:color/black" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

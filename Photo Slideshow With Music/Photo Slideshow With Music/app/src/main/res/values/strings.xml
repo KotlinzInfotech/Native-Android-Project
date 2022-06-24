@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Photo Slideshow with Music</string>
+    <string name="Policy">"This Privacy Policy apply to all apps under Multimedia Apps. \n \n Information we Collect and use under apps of multimedia apps and permission required from app as per under terms and use. \n \n WE do not collect any personal information of user from apps.
+        \n Information we get from your use of our services."</string>
+    <string name="link"><a href="http://www.www.com">Cybertech Infosoft(Privacy Policy)</a></string>
+
+    <string name="AppId">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="Banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="InterstitialAd_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="NativeAdvanceAd_id">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="app_open_ads">ca-app-pub-3940256099942544/3419835294</string>
+
+    <string name="app_name_cap">PHOTO SLIDESHOW &amp; MUSIC</string>
+    <string name="about_text">"Use Ringdroid to edit MP3, WAV, AAC, and AMR audio files and create ringtones, alarms, and notifications from them.
+
+Tip: copy audio files to your SD card using a USB cable, or get MP3s using the Amazon MP3 application.
+
+Tip: long-press on an audio file from the main screen to delete it. More below...
+
+Tip: tap anywhere on the waveform to start playing at that position.
+
+Tip: while playing, tap the word Start or End to quickly set the start and end markers to the current playback time.
+
+Tip: Use the jog wheel for more precise adjustments.
+
+Version 2.3
+
+Developer: Dominic Mazzoni
+Graphics: Joseph Wain
+Support and evangelizing: Eugene Koh
+Enhancements: Dan Klufas
+
+Ringdroid is free software, distributed under the Apache 2.0 license. Source code is on code.google.com
+"</string>
+
+    <string name="about_title">About Audiocutter</string>
+    <string name="action_settings">Settings</string>
+    <string name="add_from_storage">Select From Library</string>
+    <string name="add_story_title">Add Story Title</string>
+    <string name="alert_ok_button">OK</string>
+    <string name="alert_title_failure">Error</string>
+    <string name="alert_title_success">Success</string>
+    <string name="apply">APPLY</string>
+    <string name="apprater_dialog_title">Rate Us</string>
+    <string name="apprater_later">Later</string>
+    <string name="apprater_no_thanks">No thanks</string>
+    <string name="apprater_rate">Rate Now</string>
+    <string name="apprater_rate_message">If you enjoy with photo slideshow, please give 5 star. Thank you for your support!</string>
+    <string name="ar">ar</string>
+    <string name="are_you_sure_to_change_">"Are you sure you want to change language "</string>
+    <string name="are_you_sure_to_delete_">"Are you sure to delete "</string>
+    <string name="are_you_sure_your_video_is_not_prepared_yet_">"Your video is not prepared yet!
+Are you sure to go back?"</string>
+    <string name="artist_name">Movie maker</string>
+    <string name="at_least_3_images_require_if_you_want_to_remove_this_images_than_add_more_images_">Captured more than 3 image , it will notify you for video</string>
+    <string name="bad_extension_error">Sorry, Audiocutter is not yet able to edit files of type</string>
+    <string name="cancel">Cancel</string>
+    <string name="change_language">Change Language</string>
+    <string name="create_accurate_and_fast_video">CREATE ACCURATE &amp; FAST VIDEO</string>
+    <string name="create_amazing_video_">Create amazing video!..</string>
+    <string name="create_slideshow_with_music">create video slideshow</string>
+    <string name="create_stunning_video_">Create stunning video!..</string>
+    <string name="creating_your_preview_">Creating your preview...</string>
+    <string name="crop_image">CROP IMAGE</string>
+    <string name="delete">Delete</string>
+    <string name="delete_tmp_error">Error deleting temporary file</string>
+    <string name="delete_video_">Delete Video!</string>
+    <string name="dialog_cancel">CANCEL</string>
+    <string name="dialog_ok">Ok</string>
+    <string name="do_you_want_to_add_title_frame_">Do you want to add title frame ?</string>
+    <string name="done">DONE</string>
+    <string name="duration">00:00</string>
+    <string name="edit">Edit</string>
+    <string name="en">en</string>
+    <string name="end">End</string>
+    <string name="end_label">End:</string>
+    <string name="end_marker">End marker</string>
+    <string name="enter_caption">Enter Caption</string>
+    <string name="enter_story_name">Enter story name</string>
+    <string name="enter_video_name">Enter Video Name</string>
+    <string name="ffwd">Fast forward</string>
+    <string name="follow_bellow_step_for_app_lock">Follow bellow step for permission</string>
+    <string name="fr">fr</string>
+    <string name="frame_image">Frame Image</string>
+    <string name="give_us_5_star">Give us 5 star</string>
+    <string name="go_back">GO BACK</string>
+    <string name="go_to_settings">GOTO SETTINGS</string>
+    <string name="got_it">Got It</string>
+    <string name="image_currpted_or_not_support_">Image currpted or not support.</string>
+    <string name="ja">ja</string>
+    <string name="loading_music">Loading music...</string>
+    <string name="loading_music_">Loading music...</string>
+    <string name="low_storage_alert">Insufficient Storage !</string>
+    <string name="low_storage_alert_disc">This device does not have enough space to create this video. Consider deleting apps or content you no longer need and try again.</string>
+    <string name="making_in_progress">Making in progress</string>
+    <string name="my_creation">My Slideshow</string>
+    <string name="next">NEXT</string>
+    <string name="no_extension_error">"Sorry, audiocutter can't edit a file if it doesn't have an extension like .mp3 or .wav"</string>
+    <string name="no_frame">No Frame</string>
+    <string name="no_images_found_in_device_please_add_images_in_sdcard">"No images found in device
+Please add images in sdCard"</string>
+    <string name="no_music_found_in_device_please_add_music_in_sdcard">"No Music found in device
+Please add music in sdCard"</string>
+    <string name="no_space_error">Your SD card is full, there is not enough space to save this file.</string>
+    <string name="no_unique_filename">Unable to find unique filename</string>
+    <string name="ok">Ok</string>
+    <string name="notification_with_vibration">Notification with Vibration</string>
+    <string name="notification_with_ringtone">Notification With Ringtone</string>
+    <string name="permission_check_message">"Video Maker is about to ask you for authorization on some permissions.
+ The permissions that are requested are NOT used by Video Maker itself, they are added so that developers that expand on Video Maker's functionality.
+ Feel free to decline any of these permissions. You can manually access these from your system's app settings."</string>
+    <string name="permission_check_title">"Video Maker's Permissions:"</string>
+    <string name="play">Play</string>
+    <string name="play_error">Unable to play this media file</string>
+    <string name="play_pause_image">Play Pause Image</string>
+    <string name="please_add_some_text">Please Add Some Text</string>
+    <string name="please_enter_story_name_">Please Enter Story Name.</string>
+    <string name="please_find_and_enable_chang_pu_launcher_for_proper_working_of_applock_">Please Enable Movie Maker App From Auto-Start Manager To Receive Notification.</string>
+    <string name="please_wait_">Please Wait...</string>
+    <string name="please_wait_untill_this_process_compelete">Please wait until this process compelete</string>
+    <string name="preparing_story">Preparing story</string>
+    <string name="preview">Preview</string>
+    <string name="progress_dialog_loading">Loading...</string>
+    <string name="pt">pt</string>
+    <string name="rewind">Rewind</string>
+    <string name="read_error">Error reading file</string>
+    <string name="save">Save</string>
+    <string name="save_frame_dialog">Add Video Title</string>
+    <string name="save_msg_start">Do you want to apply this title to video?</string>
+    <string name="select_duration">SELECT DURATION</string>
+    <string name="select_images">Select Images</string>
+    <string name="select_more_than_2_images_for_create_video">Select more than 2 Images for create video</string>
+    <string name="select_music">Select Music</string>
+    <string name="set_show_daily_alert_on_to_receive_daily_notification">Turn on to receive daily notification.</string>
+    <string name="settings">Settings</string>
+    <string name="shadow_image">shadow_image</string>
+    <string name="share_native">Share</string>
+    <string name="sharemycreation">My Slideshow</string>
+    <string name="skip">Skip</string>
+    <string name="someone_waiting_for_your_video">Someone waiting for your video</string>
+    <string name="start">Start</string>
+    <string name="start_label">Start:</string>
+    <string name="start_marker">Start marker</string>
+    <string name="stay_here">STAY HERE</string>
+    <string name="stop">Stop</string>
+    <string name="story_title">Story Title</string>
+    <string name="swap_images">Swap Images</string>
+    <string name="title_activity_add_title">Select Video Title</string>
+    <string name="too_small_error">"Can't save a file that small, try making it longer."</string>
+    <string name="upload_to_youtube">Share to YouTube</string>
+    <string name="usage_tips">USAGE TIPS</string>
+    <string name="video_created">Video Created</string>
+    <string name="video_name_already_exist_">Video Name Already Exist.</string>
+    <string name="video_position_key">video_position</string>
+    <string name="video_title">Video Title</string>
+    <string name="write_error">Error writing file</string>
+    <string name="yes">Yes</string>
+    <string name="yes_cap">YES</string>
+    <string name="your_changes_on_images_will_be_removed_are_you_sure_to_go_back_">Your changes on images will be removed!Are you sure to go back?</string>
+    <string name="zh">zh</string>
+    <string name="progressBar_pref_key">progressBar_pref_key</string>
+    <string name="progressBar_pref_defValue">0</string>
+    <string name="firstcolor_pref_key">firstcolor_pref_key</string>
+    <string name="secondcolor_pref_key">secondcolor_pref_key</string>
+    <string name="thirdcolor_pref_key">thirdcolor_pref_key</string>
+    <string name="fourthcolor_pref_key">fourthcolor_pref_key</string>
+</resources>

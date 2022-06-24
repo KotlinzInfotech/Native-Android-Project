@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "420394374549",
+    "project_id": "testing-camscanner",
+    "storage_bucket": "testing-camscanner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:420394374549:android:8e835429d86e910b9cd29c",
+        "android_client_info": {
+          "package_name": "com.itech0302.camscanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "420394374549-pa3h5iah5k3mnlkvv3rdrjc86u7tag54.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjzM1DcKXO85wkcd72Seh7xfCuOCkkyQ0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "420394374549-pa3h5iah5k3mnlkvv3rdrjc86u7tag54.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

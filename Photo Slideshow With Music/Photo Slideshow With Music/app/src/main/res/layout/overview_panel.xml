@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.cybertechinfosoft.photoslideshowwithmusic.view.VerticalSlidingPanel xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layouts"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="bottom"
+    app:dragView="@+id/settings_pane_header"
+    app:overlay="false"
+    app:panelHeight="140.0dip"
+    app:shadowHeight="4.0dip">
+
+    <LinearLayout
+        android:id="@+id/default_home_screen_panel"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_splash"
+        android:baselineAligned="false"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="fill_parent"
+            android:layout_height="120.0dip"
+            app:cardBackgroundColor="@android:color/transparent"
+            app:cardElevation="4.0dip">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvAlbum"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="0.0dip"
+            android:layout_marginTop="8.0dip"
+            android:layout_weight="1.0">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvImageAlbum"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+
+            <View
+                android:layout_width="6.0dip"
+                android:layout_height="fill_parent"
+                android:background="@drawable/stack_drop_shadow_left" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/settings_container"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom|center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/settings_pane_header"
+                android:layout_width="fill_parent"
+                android:layout_height="40.0dip"
+                android:background="?colorPrimary"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/btnClear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40.0dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_card_transparent"
+                    android:text="clear"
+                    android:textColor="@android:color/white"
+                    android:visibility="visible" />
+
+                <com.cybertechinfosoft.photoslideshowwithmusic.view.ExpandIconView
+                    android:id="@+id/settings_drag_arrow"
+                    android:layout_width="40.0dip"
+                    android:layout_height="30.0dip"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_horizontal"
+                    android:adjustViewBounds="true" />
+
+                <TextView
+                    android:id="@+id/tvImageCount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12.0dip"
+                    android:text="(1)"
+                    android:textColor="@android:color/white" />
+            </RelativeLayout>
+
+            <com.cybertechinfosoft.photoslideshowwithmusic.view.EmptyRecyclerView
+                android:id="@+id/rvSelectedImagesList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/fl_adplaceholder"
+                android:layout_below="@+id/settings_pane_header"
+                android:background="@drawable/bg_splash" />
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/banner_container"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="104dp"-->
+            <!--android:background="@drawable/round_corner_ad"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tvLoadingAds"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:text="Loading Ads..."-->
+            <!--android:textColor="@color/white" />-->
+
+            <!--</LinearLayout>-->
+
+            <FrameLayout
+                android:id="@+id/fl_adplaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:layout_alignParentBottom="true"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvLoadingAds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Loading Ads..." />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/list_empty"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/settings_pane_header"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableTop="@drawable/no_video"
+                    android:gravity="center_horizontal"
+                    android:text="Images not selected yet"
+                    android:textColor="#ff999999" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="6.0dip"
+                android:layout_below="@+id/settings_pane_header"
+                android:src="@drawable/stack_drop_shadow" />
+        </RelativeLayout>
+    </FrameLayout>
+</com.cybertechinfosoft.photoslideshowwithmusic.view.VerticalSlidingPanel>

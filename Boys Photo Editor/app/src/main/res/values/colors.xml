@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">#4A00E0</color>
+    <color name="colorPrimary">#4A00E0</color>
+    <color name="colorPrimaryDark">#4501CD</color>
+
+    <color name="black">#ff000000</color>
+    <color name="white">#ffffff</color>
+    <color name="gradient_start">#4A00E0</color>
+    <color name="gradient_end">#8E2DE2</color>
+    <color name="gray">#707070</color>
+    <color name="purple">#8A2AE1</color>
+    <color name="bg_edit_main">#E4E4E4</color>
+    <color name="bg_edit_text">#606060</color>
+    <color name="bg_text_tool">#e4e4e4</color>
+</resources>

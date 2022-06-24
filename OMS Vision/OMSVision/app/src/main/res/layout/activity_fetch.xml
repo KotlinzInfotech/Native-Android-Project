@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FetchActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_10sdp"
+            android:orientation="vertical"
+            android:paddingHorizontal="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="Select Account"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_12ssp" />
+
+                <EditText
+                    android:id="@+id/spinaccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:background="@drawable/border_curv"
+                    android:drawableRight="@drawable/ic_drop_down_resize"
+                    android:drawablePadding="@dimen/_5sdp"
+                    android:focusable="false"
+                    android:fontFamily="@font/poppins_medium"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="@dimen/_13ssp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@drawable/border_curv"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="RTS Data : "
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <ImageView
+                    android:id="@+id/btnFRts"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_fetch_rts_order" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@drawable/border_curv"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:id="@+id/lstartdate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="Start Date"
+                            android:textSize="@dimen/_10ssp" />
+
+                        <TextView
+                            android:id="@+id/txtstartdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="dd/MM/yy"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_10ssp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/lenddate"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/poppins_regular"
+                            android:text="End Date"
+                            android:textSize="@dimen/_10ssp" />
+
+                        <TextView
+                            android:id="@+id/txtenddate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:hint="dd/MM/yy"
+                            android:fontFamily="@font/poppins_regular"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="@dimen/_10ssp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_curv"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="Return Data : "
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <ImageView
+                        android:id="@+id/btnFreturnRts"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_margin="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_fetch_return_order" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@drawable/border_curv"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Cancel Data : "
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <ImageView
+                    android:id="@+id/btnFcancelorder"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_fetch_cancel" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@drawable/border_curv"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Pending Data :"
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <ImageView
+                    android:id="@+id/btnFPending"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/btn_4" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="@dimen/_5sdp"
+                android:background="@drawable/border_curv"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="Payment Data : "
+                    android:textColor="@color/colorPrimaryDark" />
+
+                <ImageView
+                    android:id="@+id/btnFPayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:src="@drawable/btn_5" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

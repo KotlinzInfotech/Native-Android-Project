@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main_content"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:keepScreenOn="true">
+
+    <include layout="@layout/layout_preview" />
+
+    <LinearLayout
+        android:id="@+id/bottom_sheet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purvis_grey"
+        android:orientation="vertical"
+        app:behavior_hideable="true"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <TextView
+            android:id="@+id/tvBottomSheetTitle"
+            android:layout_width="fill_parent"
+            android:layout_height="?listPreferredItemHeightSmall"
+            android:layout_marginLeft="@dimen/abc_dialog_padding_material"
+            android:layout_marginStart="@dimen/abc_dialog_padding_material"
+            android:gravity="center_vertical"
+            android:text="@string/select_duration"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/app_theme_color"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvDuration"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" />
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

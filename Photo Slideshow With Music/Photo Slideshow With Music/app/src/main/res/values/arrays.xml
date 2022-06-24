@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="ln">
+        <item>@string/en</item>
+        <item>@string/fr</item>
+        <item>@string/ja</item>
+        <item>@string/pt</item>
+        <item>@string/zh</item>
+        <item>@string/ar</item>
+    </array>
+    <array name="material_colors">
+        <item>#ffffff</item>
+        <item>#f44336</item>
+        <item>#9c27b0</item>
+        <item>#3f51b5</item>
+        <item>#03a9f4</item>
+        <item>#009688</item>
+        <item>#8bc34a</item>
+        <item>#ffeb3b</item>
+        <item>#ff9800</item>
+        <item>#795548</item>
+        <item>#607d8b</item>
+        <item>#000000</item>
+    </array>
+
+    <array name="video_height_width">
+        <item>1920*1080</item>
+        <item>1280*720</item>
+        <item>720*480</item>
+        <item>640*360</item>
+        <item>320*240</item>
+    </array>
+    <array name="video_resolution">
+        <item>1080p Full HD</item>
+        <item>720p HD</item>
+        <item>480p</item>
+        <item>360p</item>
+        <item>240p</item>
+    </array>
+</resources>

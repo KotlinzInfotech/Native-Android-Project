@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/fl_adplaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="124dp"
+            android:background="@color/white">
+
+            <TextView
+                android:id="@+id/tvLoadingAds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Loading Ads..." />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="@dimen/_6dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="6dp"
+                android:src="@mipmap/icon" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llStar"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:text="How Was Your Experience with App, Please Share it in Star."
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/llStar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/llTop"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <ImageView
+                android:id="@+id/ivStar1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tint="@color/white"
+                android:src="@drawable/star_empty" />
+
+            <ImageView
+                android:id="@+id/ivStar2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tint="@color/white"
+                android:src="@drawable/star_empty" />
+
+            <ImageView
+                android:id="@+id/ivStar3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tint="@color/white"
+                android:src="@drawable/star_empty" />
+
+            <ImageView
+                android:id="@+id/ivStar4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tint="@color/white"
+                android:src="@drawable/star_empty" />
+
+            <ImageView
+                android:id="@+id/ivStar5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:tint="@color/white"
+                android:src="@drawable/star_empty" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/llBtnBottom"
+            android:background="#505050" />
+
+        <LinearLayout
+            android:id="@+id/llBtnBottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tvPro"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnLater"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Later"
+                android:textAllCaps="false"
+                android:textColor="@color/app_theme_color"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#505050" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/app_theme_color"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

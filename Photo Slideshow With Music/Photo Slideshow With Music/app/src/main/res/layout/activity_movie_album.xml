@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_splash">
+
+    <io.codetail.widget.RevealFrameLayout
+        android:id="@+id/container_frame"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:id="@+id/content_overlay"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="?actionBarSize"
+            android:orientation="vertical" />
+
+        <LinearLayout
+            android:id="@+id/content_frame"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="?actionBarSize"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0"
+                android:fitsSystemWindows="true">
+
+                <com.cybertechinfosoft.photoslideshowwithmusic.view.EmptyRecyclerView
+                    android:id="@+id/rvVideoAlbum"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+
+                <LinearLayout
+                    android:id="@+id/list_empty"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/img_no_video_created_yet" />
+
+                        <ImageView
+                            android:id="@+id/btnCreateVideo"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="40.0dip"
+                            android:src="@drawable/create_slide_show" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/stack_drop_shadow"
+                    android:minHeight="6.0dip" />
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:id="@+id/fl_adplaceholder"
+                android:layout_width="match_parent"
+                android:layout_height="124dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tvLoadingAds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Loading Ads..." />
+
+            </FrameLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="?colorPrimary"
+            android:minHeight="?actionBarSize">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ivback"
+                    android:layout_width="23dp"
+                    android:layout_height="23dp"
+                    android:scaleType="centerCrop"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_back" />
+
+                <TextView
+                    android:id="@+id/toolbar_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/my_creation"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@id/ivback"
+                    android:layout_marginStart="16dp"
+                    android:textColor="@color/header_font_color"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </io.codetail.widget.RevealFrameLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="@dimen/sliding_menu_width"
+        android:layout_height="fill_parent"
+        android:layout_gravity="start|bottom|center"
+        android:scrollbarThumbVertical="@android:color/transparent">
+
+        <LinearLayout
+            android:id="@+id/left_drawer"
+            android:layout_width="@dimen/sliding_menu_width"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:divider="@android:color/transparent"
+            android:orientation="vertical" />
+    </ScrollView>
+</androidx.drawerlayout.widget.DrawerLayout>

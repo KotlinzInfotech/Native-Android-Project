@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="Custom_TextView">
+        <attr name="fontName" format="string|reference" />
+        <attr name="fontType" format="enum|reference">
+            <enum name="normal" value="0" />
+            <enum name="code" value="1" />
+            <enum name="quote" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="HorizontalListView">
+        <attr name="dividerWidth" format="dimension" />
+        <attr name="android:divider" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:fadingEdgeLength" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundCornerFrameLayout">
+        <attr name="corner_radius" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="StickerView">
+        <attr name="showIcons" format="boolean" />
+        <attr name="showBorder" format="boolean" />
+        <attr name="bringToFrontCurrentSticker" format="boolean" />
+        <attr name="borderColor" format="color"/>
+        <attr name="borderAlpha" format="integer"/>
+    </declare-styleable>
+</resources>

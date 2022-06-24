@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="?colorPrimaryDark">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:background="?colorPrimary"
+        android:padding="0.0dip"
+        app:contentInsetStart="0.0dip"
+        app:navigationIcon="@drawable/icon_back"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/edit"
+            android:textColor="@color/header_font_color"
+            android:textSize="@dimen/header_font_size" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/ivRemoveView"
+        android:layout_width="fill_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        android:contentDescription="@string/app_name"
+        android:padding="8.0dip"
+        android:src="@drawable/delete_close"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/rlMainEditor"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/toolbar">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/llBottomEditTools"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="?actionBarSize">
+
+            <RelativeLayout
+                android:id="@+id/rlMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+
+                <jp.co.cyberagent.android.gpuimage.GPUImageView
+                    android:id="@+id/ivSelectedImage"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null" />
+
+                <FrameLayout
+                    android:id="@+id/flMainLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!--<com.rtugeek.android.colorseekbar.ColorSeekBar-->
+        <!--android:id="@+id/csbColorPicker"-->
+        <!--android:layout_width="50.0dip"-->
+        <!--android:layout_height="300.0dip"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginBottom="8.0dip"-->
+        <!--android:layout_marginLeft="8.0dip"-->
+        <!--android:layout_marginRight="8.0dip"-->
+        <!--android:layout_marginTop="?actionBarSize"-->
+        <!--app:barHeight="10.0dip"-->
+        <!--app:colorSeeds="@array/material_colors"-->
+        <!--app:isVertical="true"-->
+        <!--app:thumbHeight="30.0dip" />-->
+
+        <com.ak.android.widget.colorpickerseekbar.ColorPickerSeekBar
+            android:id="@+id/csbColorPicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFonts"
+            android:layout_width="fill_parent"
+            android:layout_height="48.0dip"
+            android:layout_above="@+id/llBottomEditTools"
+            android:layout_gravity="center"
+            android:background="@color/bg_grey_color"
+            android:gravity="center" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFilters"
+            android:layout_width="fill_parent"
+            android:layout_height="76.0dip"
+            android:layout_above="@+id/llBottomEditTools"
+            android:layout_gravity="center"
+            android:background="@color/bg_grey_color"
+            android:gravity="center"
+            android:paddingRight="4.0dip"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/ectCaption"
+            android:layout_width="fill_parent"
+            android:layout_height="50.0dip"
+            android:layout_above="@+id/llBottomEditTools"
+            android:background="#60000000"
+            android:focusable="true"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="textCapSentences"
+            android:textColor="@android:color/white"
+            android:textSize="30.0sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/llBottomEditTools"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="4.0dip"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgEditCrop"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4.0dip"
+                android:layout_marginRight="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_bg"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_edit_crop" />
+
+            <ImageView
+                android:id="@+id/imgEditFilter"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_bg"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_edit_filter" />
+
+            <ImageView
+                android:id="@+id/imgEditText"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_bg"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_edit_text" />
+
+            <ImageView
+                android:id="@+id/imgEditSticker"
+                android:layout_width="0.0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="4.0dip"
+                android:layout_weight="1.0"
+                android:background="@drawable/btn_bg"
+                android:scaleType="centerInside"
+                android:src="@drawable/btn_edit_sticker" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

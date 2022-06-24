@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleProgress">
+        <attr name="color1" format="reference|color" />
+        <attr name="color2" format="reference|color" />
+        <attr name="color3" format="reference|color" />
+    </declare-styleable>
+    <declare-styleable name="PreviewImageView">
+        <attr name="aspectRatioWidth" format="integer" />
+        <attr name="aspectRatioHeight" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="VerticalSlidingPanel">
+        <attr name="dragView" format="reference" />
+        <attr name="fadeColor" format="color" />
+        <attr name="flingVelocity" format="integer" />
+        <attr name="overlay" format="boolean" />
+        <attr name="panelHeight" format="dimension" />
+        <attr name="paralaxOffset" format="dimension" />
+        <attr name="parallaxOffset" format="dimension" />
+        <attr name="shadowHeight" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="ProportionalRelativeLayout">
+        <attr name="heightWidthProportion" format="float" />
+    </declare-styleable>
+    <declare-styleable name="ExpandIconView">
+        <attr name="eiv_roundedCorners" format="boolean" />
+        <attr name="eiv_switchColor" format="boolean" />
+        <attr name="eiv_color" format="color" />
+        <attr name="eiv_colorMore" format="color" />
+        <attr name="eiv_colorLess" format="color" />
+        <attr name="eiv_animationDuration" format="integer" />
+        <attr name="eiv_padding" format="dimension" />
+    </declare-styleable>
+    <declare-styleable name="RoundedImageView">
+        <attr name="riv_corner_radius" format="dimension" />
+        <attr name="riv_corner_radius_top_left" format="dimension" />
+        <attr name="riv_corner_radius_top_right" format="dimension" />
+        <attr name="riv_corner_radius_bottom_left" format="dimension" />
+        <attr name="riv_corner_radius_bottom_right" format="dimension" />
+        <attr name="riv_border_width" format="dimension" />
+        <attr name="riv_border_color" format="color" />
+        <attr name="riv_mutate_background" format="boolean" />
+        <attr name="riv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+        <attr name="riv_tile_mode">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_x">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+        <attr name="riv_tile_mode_y">
+            <enum name="clamp" value="0" />
+            <enum name="repeat" value="1" />
+            <enum name="mirror" value="2" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RippleView"></declare-styleable>
+    <declare-styleable name="RangeBar"></declare-styleable>
+    <declare-styleable name="DonutProgress">
+        <attr name="donut_progress" format="float" />
+        <attr name="donut_max" format="integer" />
+
+        <attr name="donut_unfinished_color" format="color" />
+        <attr name="donut_finished_color" format="color" />
+
+        <attr name="donut_finished_stroke_width" format="dimension" />
+        <attr name="donut_unfinished_stroke_width" format="dimension" />
+
+        <attr name="donut_text_size" format="dimension" />
+        <attr name="donut_text_color" format="color" />
+
+        <attr name="donut_prefix_text" format="string" />
+        <attr name="donut_suffix_text" format="string" />
+        <attr name="donut_text" format="string" />
+
+        <attr name="donut_background_color" format="color" />
+
+        <attr name="donut_inner_bottom_text" format="string" />
+        <attr name="donut_inner_bottom_text_size" format="dimension" />
+        <attr name="donut_inner_bottom_text_color" format="color" />
+
+        <attr name="donut_circle_starting_degree" format="integer" />
+        <attr name="donut_show_text" format="boolean" />
+        <attr name="donut_inner_drawable" format="reference" />
+    </declare-styleable>
+    <attr name="autoTint" format="boolean" />
+    <attr name="auto_cycle" format="boolean" />
+    <attr name="background" format="reference" />
+    <attr name="backgroundSplit" format="reference|color" />
+    <attr name="backgroundStacked" format="reference|color" />
+    <attr name="backgroundTint" format="color" />
+<!--    <attr name="backgroundTintMode">-->
+<!--        <enum name="add" value="16" />-->
+<!--        <enum name="multiply" value="14" />-->
+<!--        <enum name="screen" value="15" />-->
+<!--        <enum name="src_atop" value="9" />-->
+<!--        <enum name="src_in" value="5" />-->
+<!--        <enum name="src_over" value="3" />-->
+<!--    </attr>-->
+    <attr name="barHeight" format="dimension" />
+    <attr name="barLength" format="dimension" />
+    <attr name="barMargin" format="dimension" />
+    <attr name="barWeight" format="dimension" />
+    <attr name="behavior_autoHide" format="boolean" />
+    <attr name="behavior_hideable" format="boolean" />
+    <attr name="behavior_overlapTop" format="dimension" />
+<!--    <attr name="behavior_peekHeight" format="dimension">-->
+<!--        <enum name="auto" value="-1" />-->
+<!--    </attr>-->
+    <attr name="behavior_skipCollapsed" format="boolean" />
+    <attr name="bgColor" format="color" />
+    <!--<attr name="borderWidth" format="dimension" />-->
+    <attr name="border_color" format="color" />
+    <attr name="border_width" format="dimension" />
+    <attr name="borderlessButtonStyle" format="reference" />
+    <attr name="bottomSheetDialogTheme" format="reference" />
+    <attr name="bottomSheetStyle" format="reference" />
+    <attr name="buttonBarButtonStyle" format="reference" />
+    <attr name="buttonBarNegativeButtonStyle" format="reference" />
+    <attr name="buttonBarNeutralButtonStyle" format="reference" />
+    <attr name="buttonBarPositiveButtonStyle" format="reference" />
+    <attr name="buttonBarStyle" format="reference" />
+<!--    <attr name="buttonGravity">-->
+<!--        <flag name="bottom" value="0x00000050" />-->
+<!--        <flag name="top" value="0x00000030" />-->
+<!--    </attr>-->
+    <attr name="colorSeeds" format="reference" />
+    <attr name="colorSwitchThumbNormal" format="color" />
+    <attr name="coordinatorLayoutStyle" format="reference" />
+    <attr name="isVertical" format="boolean" />
+    <attr name="itemBackground" format="reference" />
+    <attr name="itemIconTint" format="color" />
+    <attr name="metaButtonBarButtonStyle" format="reference" />
+    <attr name="metaButtonBarStyle" format="reference" />
+    <attr name="padding_bottom" format="dimension" />
+    <attr name="padding_left" format="dimension" />
+    <attr name="padding_right" format="dimension" />
+    <attr name="padding_top" format="dimension" />
+<!--    <attr name="pager_animation">-->
+<!--        <enum name="Accordion" value="1" />-->
+<!--        <enum name="Background2Foreground" value="2" />-->
+<!--        <enum name="CubeIn" value="3" />-->
+<!--        <enum name="Default" value="0" />-->
+<!--        <enum name="DepthPage" value="4" />-->
+<!--        <enum name="Fade" value="5" />-->
+<!--        <enum name="FlipHorizontal" value="6" />-->
+<!--        <enum name="FlipPage" value="7" />-->
+<!--        <enum name="Foreground2Background" value="8" />-->
+<!--        <enum name="RotateDown" value="9" />-->
+<!--        <enum name="RotateUp" value="10" />-->
+<!--        <enum name="Stack" value="11" />-->
+<!--        <enum name="Tablet" value="12" />-->
+<!--        <enum name="ZoomIn" value="13" />-->
+<!--        <enum name="ZoomOut" value="15" />-->
+<!--        <enum name="ZoomOutSlide" value="14" />-->
+<!--    </attr>-->
+    <attr name="scaleType">
+        <enum name="centerCrop" value="0" />
+        <enum name="fitXY" value="1" />
+    </attr>
+
+    <declare-styleable name="FensterVideoView">
+        <attr name="scaleType" />
+    </declare-styleable>
+    <attr name="selected_color" format="color" />
+    <attr name="selected_drawable" format="reference" />
+    <attr name="selected_height" format="dimension" />
+    <attr name="selected_padding_bottom" format="dimension" />
+    <attr name="selected_padding_left" format="dimension" />
+    <attr name="selected_padding_right" format="dimension" />
+    <attr name="selected_padding_top" format="dimension" />
+    <attr name="selected_width" format="dimension" />
+    <attr name="selectorColor" format="reference|color" />
+    <attr name="selectorSize" format="dimension" />
+    <attr name="semanticallySearchable" format="boolean" />
+    <attr name="settingsDescription" format="string" />
+<!--    <attr name="shape">-->
+<!--        <enum name="oval" value="0" />-->
+<!--        <enum name="rect" value="1" />-->
+<!--    </attr>-->
+    <attr name="showAlphaBar" format="boolean" />
+<!--    <attr name="showAsAction">-->
+<!--        <flag name="always" value="0x00000002" />-->
+<!--        <flag name="collapseActionView" value="0x00000008" />-->
+<!--        <flag name="ifRoom" value="0x00000001" />-->
+<!--        <flag name="never" value="0x00000000" />-->
+<!--        <flag name="withText" value="0x00000004" />-->
+<!--    </attr>-->
+<!--    <attr name="showDividers">-->
+<!--        <flag name="beginning" value="0x00000001" />-->
+<!--        <flag name="end" value="0x00000004" />-->
+<!--        <flag name="middle" value="0x00000002" />-->
+<!--        <flag name="none" value="0x00000000" />-->
+<!--    </attr>-->
+    <attr name="showText" format="boolean" />
+    <attr name="showTitle" format="boolean" />
+    <attr name="singleChoiceItemLayout" format="reference" />
+    <attr name="sourceClass">
+        <enum name="contact" value="1" />
+        <enum name="email" value="0" />
+        <enum name="instant_message" value="2" />
+    </attr>
+    <attr name="thumbHeight" format="dimension" />
+    <attr name="thumbTextPadding" format="dimension" />
+    <attr name="thumbTint" format="color" />
+<!--    <attr name="thumbTintMode">-->
+<!--        <enum name="add" value="16" />-->
+<!--        <enum name="multiply" value="14" />-->
+<!--        <enum name="screen" value="15" />-->
+<!--        <enum name="src_atop" value="9" />-->
+<!--        <enum name="src_in" value="5" />-->
+<!--        <enum name="src_over" value="3" />-->
+<!--    </attr>-->
+    <attr name="unselected_color" format="color" />
+    <attr name="unselected_drawable" format="reference" />
+    <attr name="unselected_height" format="dimension" />
+    <attr name="unselected_padding_bottom" format="dimension" />
+    <attr name="unselected_padding_left" format="dimension" />
+    <attr name="unselected_padding_right" format="dimension" />
+    <attr name="unselected_padding_top" format="dimension" />
+    <attr name="unselected_width" format="dimension" />
+</resources>

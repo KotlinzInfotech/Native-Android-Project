@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:background="#88000000"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:keepScreenOn="true">
+
+    <RelativeLayout
+        android:id="@+id/rlMain"
+        android:layout_width="fill_parent"
+        android:layout_height="250.0dip"
+        android:layout_marginLeft="24.0dip"
+        android:layout_marginRight="24.0dip"
+        android:background="@drawable/quantum_panel">
+
+        <TextView
+            android:id="@+id/tvMsg"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/dialog_header"
+            android:gravity="center"
+            android:paddingBottom="8.0dip"
+            android:paddingLeft="6.0dip"
+            android:paddingRight="6.0dip"
+            android:paddingTop="8.0dip"
+            android:text="@string/follow_bellow_step_for_app_lock"
+            android:textColor="@color/white"
+            android:textSize="18.0sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/vViewMain"
+            android:layout_width="fill_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@+id/tvMsg"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/vViewMain"
+            android:layout_toLeftOf="@+id/scSwitchTut"
+            android:drawableLeft="@mipmap/icon"
+            android:gravity="center_vertical"
+            android:paddingBottom="4.0dip"
+            android:paddingLeft="8.0dip"
+            android:paddingTop="4.0dip"
+            android:text="@string/app_name" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/scSwitchTut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/tvName"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/vViewMain"
+            android:layout_marginRight="8.0dip"
+            android:clickable="false"
+            android:paddingLeft="8.0dip" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tvName"
+            android:layout_marginLeft="@dimen/abc_dialog_padding_material"
+            android:layout_marginRight="@dimen/abc_dialog_padding_material"
+            android:gravity="center"
+            android:text="@string/please_find_and_enable_chang_pu_launcher_for_proper_working_of_applock_"
+            android:textColor="@color/amber_500" />
+
+        <ImageView
+            android:id="@+id/ivImageHand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/scSwitchTut"
+            android:layout_alignTop="@+id/scSwitchTut"
+            android:paddingTop="16.0dip"
+            android:src="@drawable/fingure2" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btnGotIt"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlMain"
+        android:layout_marginLeft="28.0dip"
+        android:layout_marginRight="28.0dip"
+        android:background="@drawable/btn_color_selector"
+        android:text="@string/got_it"
+        android:textColor="@color/white" />
+</RelativeLayout>

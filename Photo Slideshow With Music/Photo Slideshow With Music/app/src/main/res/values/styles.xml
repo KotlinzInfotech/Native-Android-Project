@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AndroidImageSlider_Corner_Oval_Orange">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/indicator_corner_bg</item>
+        <item name="android:paddingLeft">2.0dip</item>
+        <item name="android:paddingRight">2.0dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="padding_bottom">4.0dip</item>
+        <item name="padding_left">3.0dip</item>
+        <item name="padding_right">3.0dip</item>
+        <item name="padding_top">4.0dip</item>
+        <item name="selected_color">#ffff6600</item>
+        <item name="selected_height">6.0dip</item>
+        <item name="selected_width">6.0dip</item>
+        <item name="shape">oval</item>
+        <item name="unselected_color">#ffffffff</item>
+        <item name="unselected_height">6.0dip</item>
+        <item name="unselected_width">6.0dip</item>
+    </style>
+
+    <style name="AppAlertDialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/dialog_text_color</item>
+        <item name="android:windowTitleStyle">@style/TitleDialogTextStyle</item>
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+        <item name="android:background">@color/dialog_bg_color</item>
+        <item name="colorAccent">@color/app_theme_color</item>
+        <item name="colorPrimary">@color/header_color</item>
+        <item name="colorPrimaryDark">@color/bg_color</item>
+    </style>
+
+    <style name="AppAlertDialogVideoQuality" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowTitleStyle">@style/TitleDialogTextStyle</item>
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+        <item name="android:background">@color/dialog_bg_color</item>
+        <item name="colorAccent">@color/app_theme_color</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimaryDark">@color/white</item>
+        <item name="textColorAlertDialogListItem">@color/white</item>
+    </style>
+
+    <style name="AppTheme.AdAttribution">
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_gravity">left</item>
+        <item name="android:background">@color/colorPrimary</item>
+        <item name="android:padding">2dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:text">Ad</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:textColorSecondary">@color/white</item>
+        <item name="android:windowBackground">@color/windowbackgroundcolor</item>
+        <item name="android:textColorHighlight">@color/m_highlight_blue</item>
+        <item name="android:itemBackground">@color/white</item>
+        <item name="android:actionBarStyle">@style/Theme.MovieMaker.ActionBar</item>
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/myPopupMenuTextAppearanceLarge
+        </item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/myPopupMenuTextAppearanceSmall
+        </item>
+        <item name="actionMenuTextAppearance">@style/Theme.MovieMaker.ActionBar.MenuTextStyle</item>
+        <item name="colorAccent">@color/amber_300</item>
+        <item name="colorButtonNormal">@color/amber_300</item>
+        <item name="colorControlActivated">@color/amber_500</item>
+        <item name="colorControlNormal">@color/amber_300</item>
+        <item name="colorPrimary">@color/header_color</item>
+        <item name="colorPrimaryDark">@color/bg_color</item>
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="textAppearanceLargePopupMenu">@style/myPopupMenuTextAppearanceLarge</item>
+        <item name="textAppearanceSmallPopupMenu">@style/myPopupMenuTextAppearanceSmall</item>
+    </style>
+
+    <style name="AppDialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+        <item name="android:background">@color/grey_fa</item>
+    </style>
+
+    <style name="AppTheme" parent="@style/AppBaseTheme" />
+
+    <style name="AppThemeMoreApp" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorAccent">@color/color_accent_moreapp</item>
+        <item name="colorPrimary">@color/color_primary_moreapp</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark_moreapp</item>
+    </style>
+
+    <style name="AppThemeMoreApp1" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/color_accent1_moreapp</item>
+        <item name="colorPrimary">@color/color_primary1_moreapp</item>
+        <item name="colorPrimaryDark">@color/color_primary_dark1_moreapp</item>
+    </style>
+
+    <style name="CardView.Dark" parent="@style/CardView">
+        <item name="cardBackgroundColor">@color/cardview_dark_background</item>
+    </style>
+
+    <style name="CardView.Light" parent="@style/CardView">
+        <item name="cardBackgroundColor">@color/cardview_light_background</item>
+    </style>
+
+    <style name="CropImageTheme" parent="@style/Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:windowBackground">@color/bg_color</item>
+        <item name="android:actionBarStyle">@style/Theme.MovieMaker.ActionBar</item>
+        <item name="actionMenuTextAppearance">@style/Theme.MovieMaker.ActionBar.MenuTextStyle</item>
+        <item name="actionMenuTextColor">@android:color/white</item>
+        <item name="colorAccent">@color/amber_300</item>
+        <item name="colorButtonNormal">@color/amber_300</item>
+        <item name="colorControlActivated">@color/amber_400</item>
+        <item name="colorPrimary">@color/header_color</item>
+        <item name="colorPrimaryDark">@color/bg_color</item>
+    </style>
+
+    <style name="CustomDialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowMinWidthMajor">90.0%</item>
+        <item name="android:windowMinWidthMinor">90.0%</item>
+    </style>
+
+    <style name="FensterFullscreenActionBarStyle" parent="@android:style/Widget.Holo.ActionBar">
+        <item name="android:background">@color/default_bg</item>
+    </style>
+
+    <style name="FensterFullscreenTheme" parent="@android:style/Theme.Holo">
+        <item name="android:windowBackground">@null</item>
+        <item name="android:actionBarStyle">@style/FensterFullscreenActionBarStyle</item>
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="metaButtonBarButtonStyle">?android:buttonBarButtonStyle</item>
+        <item name="metaButtonBarStyle">?android:buttonBarStyle</item>
+    </style>
+
+    <style name="MediaButton">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">@dimen/fen__media_controller_button_width</item>
+        <item name="android:layout_height">@dimen/fen__media_controller_button_height</item>
+    </style>
+
+    <style name="MediaButton.Next" parent="@style/MediaButton">
+        <item name="android:src">@android:drawable/ic_media_ff</item>
+    </style>
+
+    <style name="MediaButton.Play" parent="@style/MediaButton">
+        <item name="android:src">@android:drawable/ic_media_play</item>
+    </style>
+
+    <style name="MediaButton.Previous" parent="@style/MediaButton">
+        <item name="android:src">@android:drawable/ic_media_rew</item>
+    </style>
+
+    <style name="MediaText">
+        <item name="android:textSize">@dimen/fen__media_controller_text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">@dimen/fen__padding_medium</item>
+    </style>
+
+    <style name="MyPopupMenu" parent="@style/Widget.AppCompat.Light.PopupMenu">
+        <item name="android:popupBackground">@drawable/appscreen_menu_background</item>
+    </style>
+
+    <style name="MyRadioButton" parent="@style/AppTheme">
+        <item name="colorControlActivated">@color/amber_500</item>
+        <item name="colorControlNormal">@color/amber_300</item>
+    </style>
+
+    <style name="PauseDialogAnimation" parent="@style/Theme.AppCompat.DayNight.Dialog.Alert">
+        <item name="android:windowEnterAnimation">@anim/anim_scale_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_scale_out</item>
+    </style>
+
+    <style name="PauseDialogAnimationForVideoTitleDailog">
+        <item name="android:windowEnterAnimation">@anim/abc_slide_in_top</item>
+        <item name="android:windowExitAnimation">@anim/abc_slide_out_top</item>
+    </style>
+
+    <style name="RadioButtonTeal" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/app_theme_color</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorPrimary">@color/app_theme_color</item>
+    </style>
+
+    <style name="Theme.AppCompat.Light.NoActionBar" parent="@style/Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.AppCompat.NoActionBar" parent="@style/Theme.AppCompat">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:background">#33000000</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+
+    <style name="Theme.AppInvite.Preview" parent="@style/Theme.AppInvite.Preview.Base">
+        <item name="android:colorBackground">@android:color/white</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="Theme.AppInvite.Preview.Base" parent="@android:style/Theme.Holo.Light.DialogWhenLarge.NoActionBar" />
+
+    <!-- <style name="Theme.Design" parent="@style/Theme.AppCompat">
+         <item name="coordinatorLayoutStyle">@style/Widget.Design.CoordinatorLayout</item>
+         <item name="textColorError">?colorError</item>
+     </style>-->
+    <style name="PauseDialogAnimation1">
+        <item name="android:windowEnterAnimation">@anim/inout</item>
+        <item name="android:windowExitAnimation">@anim/outin</item>
+    </style>
+
+    <style name="Theme.Launcher" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/bg_color</item>
+        <item name="android:textColorHighlight">@color/m_highlight_blue</item>
+        <item name="android:itemBackground">@color/white</item>
+        <item name="android:actionBarStyle">@style/Theme.MovieMaker.ActionBar</item>
+        <item name="android:popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="android:textAppearanceLargePopupMenu">@style/myPopupMenuTextAppearanceLarge
+        </item>
+        <item name="android:textAppearanceSmallPopupMenu">@style/myPopupMenuTextAppearanceSmall
+        </item>
+        <item name="actionMenuTextAppearance">@style/Theme.MovieMaker.ActionBar.MenuTextStyle</item>
+        <item name="colorAccent">@color/amber_300</item>
+        <item name="colorButtonNormal">@color/amber_300</item>
+        <item name="colorControlActivated">@color/amber_400</item>
+        <item name="colorControlNormal">@color/amber_300</item>
+        <item name="colorPrimary">@color/header_color</item>
+        <item name="colorPrimaryDark">@color/bg_color</item>
+        <item name="popupMenuStyle">@style/MyPopupMenu</item>
+        <item name="textAppearanceLargePopupMenu">@style/myPopupMenuTextAppearanceLarge</item>
+        <item name="textAppearanceSmallPopupMenu">@style/myPopupMenuTextAppearanceSmall</item>
+    </style>
+
+    <style name="Theme.MovieMaker" parent="@style/Theme.AppCompat.DayNight.NoActionBar">
+        <item name="android:windowBackground">@color/bg_color</item>
+        <item name="android:textColorHighlight">@color/m_highlight_blue</item>
+        <item name="android:actionBarStyle">@style/Theme.MovieMaker.ActionBar</item>
+        <item name="actionMenuTextAppearance">@style/Theme.MovieMaker.ActionBar.MenuTextStyle</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="colorControlActivated">@color/m_blue_actionbar</item>
+        <item name="colorPrimary">@color/header_color</item>
+        <item name="colorPrimaryDark">@color/bg_color</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MovieMaker.ActionBar" parent="@style/Widget.AppCompat.ActionBar.Solid">
+        <item name="android:titleTextStyle">@style/Theme.MovieMaker.ActionBar.TitleText</item>
+    </style>
+
+    <style name="Theme.MovieMaker.ActionBar.MenuTextStyle" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:fontFamily">sans-serif-heavy</item>
+    </style>
+
+    <style name="Theme.MovieMaker.ActionBar.TitleText" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Theme.MovieMaker.ActionBar.TitleText.Dark" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Theme.MovieMaker.ActionBar.TitleText.Light" parent="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">sans-serif-light</item>
+    </style>
+
+    <style name="Theme.MovieMaker.AlertDialog" parent="@style/Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColorPrimary">@color/dialog_text_color</item>
+        <item name="android:textColorSecondary">@color/dialog_text_color</item>
+        <item name="android:windowTitleStyle">@style/TitleDialogTextStyle</item>
+        <item name="android:textColor">@color/white_dark</item>
+        <item name="android:windowAnimationStyle">@style/PauseDialogAnimation</item>
+        <item name="android:background">@color/dialog_bg_color</item>
+        <item name="colorAccent">@color/app_theme_color</item>
+        <item name="colorPrimary">@color/header_color</item>
+        <item name="colorPrimaryDark">@color/bg_color</item>
+    </style>
+
+    <style name="TitleDialogTextStyle" parent="@style/Base.DialogWindowTitle.AppCompat">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TitleDialogTextStyle.RED" parent="@style/Base.DialogWindowTitle.AppCompat">
+        <item name="android:textColorPrimary">@color/m_gray_medium</item>
+        <item name="android:textColor">@color/amber_500</item>
+    </style>
+
+    <style name="myPopupMenuTextAppearanceLarge" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Large">
+        <item name="android:textColor">@color/m_gray_medium</item>
+    </style>
+
+    <style name="myPopupMenuTextAppearanceSmall" parent="@style/TextAppearance.AppCompat.Light.Widget.PopupMenu.Small">
+        <item name="android:textColor">@color/m_gray_medium</item>
+    </style>
+
+    <style name="textViewButtonStyle">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.0</item>
+        <item name="android:shadowRadius">0.0</item>
+    </style>
+
+    <style name="textViewHeaderStyle">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:shadowColor">#7f000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.0</item>
+        <item name="android:shadowRadius">0.0</item>
+    </style>
+
+    <style name="textViewMessageStyle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:shadowColor">#7f000000</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.0</item>
+        <item name="android:shadowRadius">0.0</item>
+    </style>
+</resources>

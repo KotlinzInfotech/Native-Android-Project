@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/round_corner_bg"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <FrameLayout
+            android:id="@+id/fl_adplaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_alignParentBottom="true"
+            android:background="#787777">
+
+            <TextView
+                android:id="@+id/tvLoadAds"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="Loading Ads..."
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/llTop"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="@dimen/text_10"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="6dp"
+                android:src="@mipmap/ic_launcher" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvPro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llStar"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:paddingBottom="4dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:text="How Was Your Experience with App, Please Share it in Star."
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/llStar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/llTop"
+            android:orientation="horizontal"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp">
+
+            <ImageView
+                android:id="@+id/ivStar1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/star_empty"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/ivStar2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/star_empty"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/ivStar3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/star_empty"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/ivStar4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/star_empty"
+                app:tint="@color/white" />
+
+            <ImageView
+                android:id="@+id/ivStar5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/star_empty"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/vDivider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/llBtnBottom"
+            android:background="#807e7e" />
+
+        <LinearLayout
+            android:id="@+id/llBtnBottom"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/tvPro"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnLater"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Later"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#807e7e" />
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

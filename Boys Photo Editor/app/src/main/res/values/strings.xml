@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Boys Photo Editor Man Beard</string>
+    <string name="privacy_link"><a href="http://www.www.com">Photo Filter Studio(Privacy Policy)</a></string>
+
+    <string name="AppId">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="Banner_ad_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="InterstitialAd_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_Native">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="app_open_ads">ca-app-pub-3940256099942544/3419835294</string>
+
+
+    <string name="dialog_message">Are you sure you want to go back</string>
+    <string name="soda">Blonde</string>
+    <string name="title_activity_show_image_">ShowImage_Activity</string>
+    <string name="share_your_story">Share With</string>
+    <string name="eraser">Eraser</string>
+
+</resources>

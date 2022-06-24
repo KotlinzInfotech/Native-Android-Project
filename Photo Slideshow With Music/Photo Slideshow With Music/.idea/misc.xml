@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/drawable-v21/bg_card_blue_.xml" value="0.13489583333333333" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/drawable/bg_item_dragging_state.xml" value="0.13489583333333333" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/drawable/btn_app_theme_selector.xml" value="0.13489583333333333" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/drawable/btn_shape_second.xml" value="0.25333333333333335" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/drawable/crop_image_menu_crop_stub.xml" value="0.13489583333333333" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/layout/activity_arrange_images.xml" value="0.24114583333333334" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/layout/activity_home_main.xml" value="0.24114583333333334" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/layout/activity_movie_album.xml" value="0.24114583333333334" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/layout/activity_play_creationvideo.xml" value="0.15" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/layout/activity_predefine_add_music1.xml" value="0.19814814814814816" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/layout/activity_preview.xml" value="0.17222222222222222" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/layout/activity_progress.xml" value="0.24114583333333334" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/layout/activity_settings.xml" value="0.24114583333333334" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/layout/ad_unified_native.xml" value="0.22" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/layout/ad_unified_second.xml" value="0.24114583333333334" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/layout/ad_unified_small.xml" value="0.24114583333333334" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/layout/dialog_back_layout.xml" value="0.24114583333333334" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/layout/image_select_activity.xml" value="0.24114583333333334" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/layout/layout_preview.xml" value="0.24114583333333334" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/layout/overview_panel.xml" value="0.24114583333333334" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/layout/setting_help.xml" value="0.11875" />
+        <entry key="..\:/Ravi/WorkSpace/All Project/Code/Photo Slideshow With Music/app/src/main/res/layout/splashscreen.xml" value="0.17777777777777778" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

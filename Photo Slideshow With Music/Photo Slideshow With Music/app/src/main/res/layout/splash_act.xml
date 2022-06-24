@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp">
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="15dp"
+                android:src="@drawable/gift_package" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/img1"
+                android:text="Trending Apps"
+                android:textColor="#ff000000" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/native_ad_container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/ad_inter_recycle_view"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="37dp"
+                android:layout_marginTop="2dp"
+                android:background="@android:color/transparent"
+                android:overScrollMode="never" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/white"
+                android:orientation="horizontal"
+                android:weightSum="1.0">
+
+                <LinearLayout
+                    android:id="@+id/llPrivacy"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.3"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:text="Ads By"
+                        android:textColor="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="5dp"
+                        android:autoLink="web"
+                        android:padding="2dp"
+                        android:text="@string/link"
+                        android:textAppearance="?android:textAppearanceSmall"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="0.7"
+                    android:visibility="invisible"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/ll_skip"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/llPrivacy"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="2dp"
+                        android:layout_marginTop="2dp">
+
+                        <androidx.cardview.widget.CardView xmlns:n2="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="fill_parent"
+                            android:layout_height="35dp"
+                            n2:cardBackgroundColor="@color/colorPrimary"
+                            n2:cardCornerRadius="15dp"
+                            n2:cardElevation="0dp">
+
+                            <RelativeLayout
+                                android:id="@+id/rlSkip"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+                                <Button
+                                    android:id="@+id/btnSkip"
+                                    style="@style/Widget.AppCompat.Button.Borderless"
+                                    android:layout_width="70dp"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:text="  Skip Ads"
+                                    android:textAllCaps="false"
+                                    android:textColor="#ffffffff" />
+
+                                <ImageView
+                                    android:id="@+id/ivSkip"
+                                    android:layout_width="25dp"
+                                    android:layout_height="25dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_margin="10dp"
+                                    android:layout_toRightOf="@+id/btnSkip"
+                                    android:src="@drawable/skipads_arrow" />
+                            </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

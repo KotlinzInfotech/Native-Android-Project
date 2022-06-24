@@ -1,0 +1,127 @@
+{
+  "project_info": {
+    "project_number": "1039349818152",
+    "firebase_url": "https://wavymusic-4a5fa.firebaseio.com",
+    "project_id": "wavymusic-4a5fa",
+    "storage_bucket": "wavymusic-4a5fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039349818152:android:aedbe3d44a5e1c8384a61d",
+        "android_client_info": {
+          "package_name": "com.unitedvideos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039349818152-1h92usf1ajh6lc64nmp5i02l614affkv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANXkWq35hTUfmBylM8TBmTfXpRhj_WM_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039349818152-1h92usf1ajh6lc64nmp5i02l614affkv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039349818152:android:f25d83db00491f6984a61d",
+        "android_client_info": {
+          "package_name": "com.wavymusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039349818152-1h92usf1ajh6lc64nmp5i02l614affkv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANXkWq35hTUfmBylM8TBmTfXpRhj_WM_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039349818152-1h92usf1ajh6lc64nmp5i02l614affkv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039349818152:android:2c84dfb324a8d61684a61d",
+        "android_client_info": {
+          "package_name": "com.xyz.photomusicvideo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039349818152-1h92usf1ajh6lc64nmp5i02l614affkv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANXkWq35hTUfmBylM8TBmTfXpRhj_WM_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039349818152-1h92usf1ajh6lc64nmp5i02l614affkv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1039349818152:android:f4e8139c174e603584a61d",
+        "android_client_info": {
+          "package_name": "com.xyz.photoslideshowwithmusic"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1039349818152-1h92usf1ajh6lc64nmp5i02l614affkv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyANXkWq35hTUfmBylM8TBmTfXpRhj_WM_0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1039349818152-1h92usf1ajh6lc64nmp5i02l614affkv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

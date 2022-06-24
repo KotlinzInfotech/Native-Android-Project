@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "765904806035",
+    "project_id": "boysphotoeditors",
+    "storage_bucket": "boysphotoeditors.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:765904806035:android:d09936c7ad232ee707ed66",
+        "android_client_info": {
+          "package_name": "com.kotlinz.boysphotoeditor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "765904806035-soh8hn53gevk0d0s6lji423lk9apv8c2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAuxyTFCAuUK0GKjRCUDKbj3G4ywfgEb0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "765904806035-soh8hn53gevk0d0s6lji423lk9apv8c2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

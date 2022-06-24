@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingBottom="0.5dip"
+    android:paddingLeft="1.0dip"
+    android:paddingRight="1.0dip"
+    android:paddingTop="0.5dip">
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/languageName"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_card_dark"
+        android:button="@null"
+        android:drawableEnd="?android:listChoiceIndicatorSingle"
+        android:drawablePadding="20.0dip"
+        android:drawableRight="?android:listChoiceIndicatorSingle"
+        android:gravity="center_vertical"
+        android:minHeight="?listPreferredItemHeightSmall"
+        android:paddingEnd="?dialogPreferredPadding"
+        android:paddingLeft="@dimen/abc_select_dialog_padding_start_material"
+        android:paddingRight="?dialogPreferredPadding"
+        android:text="Music 1"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/white"
+        android:textSize="14.0sp"
+        app:buttonTint="@color/colorPrimary" />
+</LinearLayout>

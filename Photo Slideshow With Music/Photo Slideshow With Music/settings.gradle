@@ -1,0 +1,3 @@
+//include ':FFmpegAndroid'
+include ':app'
+rootProject.name = "Photo Slideshow With Music"

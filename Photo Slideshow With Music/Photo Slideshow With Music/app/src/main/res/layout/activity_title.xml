@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg_splash"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_alignParentTop="true"
+            android:background="?colorPrimary"
+            app:navigationIcon="@drawable/icon_back"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <TextView
+                android:id="@+id/toolbar_title"
+                style="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:text="@string/edit"
+                android:textColor="@color/header_font_color"
+                android:textSize="@dimen/header_font_size" />
+        </androidx.appcompat.widget.Toolbar>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tblFrames"
+            android:layout_width="fill_parent"
+            android:layout_height="?actionBarSize"
+            android:layout_below="@+id/toolbar"
+            android:background="?colorPrimary"
+            app:tabIndicatorColor="@color/app_theme_color"
+            app:tabIndicatorHeight="2.0dip"
+            app:tabSelectedTextColor="@color/app_theme_color" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llBottomEditTools"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header"
+        android:fillViewport="true"
+        android:isScrollContainer="false">
+
+        <com.cybertechinfosoft.photoslideshowwithmusic.view.ScrollableViewPager
+            android:id="@+id/vpPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/llBottomEditTools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="4.0dip"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imgEditCamera"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="2.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_bg"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_edit_camera" />
+
+        <ImageView
+            android:id="@+id/imgEditGallery"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_bg"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_edit_gallery" />
+
+        <ImageView
+            android:id="@+id/imgEditText"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="2.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_bg"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_edit_text" />
+
+        <ImageView
+            android:id="@+id/imgEditSticker"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="4.0dip"
+            android:layout_weight="1.0"
+            android:background="@drawable/btn_bg"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_edit_sticker" />
+    </LinearLayout>
+</RelativeLayout>
